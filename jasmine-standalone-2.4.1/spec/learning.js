@@ -6,6 +6,12 @@ var addition = function() {
 
     expect(1 + 2).toEqual(3);
   });
+
+  // Converts string to number before addition
+  it('Correctly adds number and string', function() {
+
+    expect(1 + '2').toEqual(3);
+  });
 };
 
 describe('Addition operator', addition);
