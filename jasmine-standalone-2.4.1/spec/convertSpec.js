@@ -1,18 +1,3 @@
-var inchCentimeters = function() {
-
-  expect(Convert.inToCm(5).toEqual(12.7));
-};
-
-var feetMetres = function() {
-
-  expect(Convert.ftToM(50).toEqual(15.24));
-};
-
-var milesKilometers = function() {
-
-  expect(Convert.mToKm(500).toEqual(804.672));
-};
-
 describe("Convert library", function() {
 
   // Object through which functions will be accessed
@@ -34,5 +19,9 @@ describe("Convert library", function() {
 
     expect(convert.ftToM(50)).toEqual(15.24);
   });
-  it('Accurately converts miles to kilometres', milesKilometres);
+
+  it('Accurately converts miles to kilometres', function() {
+
+    expect(convert.mToKm(500)).toEqual(804.67);
+  });
 });

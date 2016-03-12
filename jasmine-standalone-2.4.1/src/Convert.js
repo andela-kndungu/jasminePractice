@@ -8,6 +8,11 @@ Convert.prototype.inToCm = function(inches) {
 };
 
 Convert.prototype.ftToM = function(feet) {
-  
+
   return feet * 0.3048;
+};
+
+Convert.prototype.mToKm = function(miles) {
+
+  return miles * 1.60934;
 };
