@@ -15,7 +15,18 @@ var milesKilometers = function() {
 
 describe("Convert library", function() {
 
-  it('Accurately converts inches to centimetres', inchCentimeters);
+  // Object through which functions will be accessed
+  var convert;
+
+  beforeEach(function() {
+
+    convert = new Convert();
+  });
+
+  it('Accurately converts inches to centimetres', function() {
+
+    expect(convert.inToCm(1)).toEqual(2.54);
+  });
   it('Accurately converts feet to metres', feetMetres);
   it('Accurately converts miles to kilometres', milesKilometres);
 });
