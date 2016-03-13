@@ -4,7 +4,7 @@ describe("Convert library", function() {
   var convert;
 
   // Initialise object before running specs
-  beforeEach(function() {
+  beforeAll(function() {
 
     convert = new Convert();
   });
