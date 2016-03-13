@@ -24,4 +24,10 @@ describe("Convert library", function() {
 
     expect(convert.mToKm(500)).toEqual(804.67);
   });
+
+  it('Accurately converts light years to kilometres', function() {
+
+    pending('Yet to implement the function');
+    expect(convert.lyToKm(1)).toEqual(9.461e+12);
+  });
 });
